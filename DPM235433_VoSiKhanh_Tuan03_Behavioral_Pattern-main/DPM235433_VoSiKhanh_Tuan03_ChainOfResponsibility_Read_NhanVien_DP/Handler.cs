@@ -1,0 +1,2 @@
+﻿namespace DPM235433_VoSiKhanh_Tuan03_ChainOfResponsibility_Read_NhanVien_DP;
+public abstract class Handler { protected Handler Next; public void SetNext(Handler next) => Next = next; public abstract void Handle(string employee, int days); }

@@ -1,0 +1,2 @@
+﻿namespace DPM235433_VoSiKhanh_Tuan03_Mediator_Read_NhanVien_DP;
+public class CompanyMediator : IMediator { public HRDepartment HR { get; set; } public ITDepartment IT { get; set; } public CompanyMediator() { HR = null!; IT = null!; } public void Notify(object sender, string ev) { if (ev == "Hire") IT.SetupEquipment(); } }

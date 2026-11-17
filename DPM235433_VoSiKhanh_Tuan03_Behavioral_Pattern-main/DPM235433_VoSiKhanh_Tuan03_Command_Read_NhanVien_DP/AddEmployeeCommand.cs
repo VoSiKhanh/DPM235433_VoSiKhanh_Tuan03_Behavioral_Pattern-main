@@ -1,0 +1,2 @@
+﻿namespace DPM235433_VoSiKhanh_Tuan03_Command_Read_NhanVien_DP;
+public class AddEmployeeCommand : ICommand { private EmployeeManager _manager; private string _name; public AddEmployeeCommand(EmployeeManager m, string n) { _manager = m; _name = n; } public void Execute() => _manager.Add(_name); public void Undo() => _manager.Remove(_name); }

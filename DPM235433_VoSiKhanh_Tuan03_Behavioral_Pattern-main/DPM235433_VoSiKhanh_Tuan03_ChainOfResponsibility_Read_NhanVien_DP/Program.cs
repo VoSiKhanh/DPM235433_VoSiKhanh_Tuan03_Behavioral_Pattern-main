@@ -1,0 +1,3 @@
+﻿using System;
+namespace DPM235433_VoSiKhanh_Tuan03_ChainOfResponsibility_Read_NhanVien_DP;
+class Program { static void Main() { Console.WriteLine("--- CHAIN OF RESPONSIBILITY: Duyet Nghiep Phep Nhan Vien ---"); var tl = new TeamLead(); var mgr = new Manager(); var dir = new Director(); tl.SetNext(mgr); mgr.SetNext(dir); tl.Handle("NV Nguyen Van A", 2); tl.Handle("NV Tran Thi B", 4); tl.Handle("NV Le Van C", 10); } }
